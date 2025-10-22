@@ -7,7 +7,7 @@ A complete, Azure lakehouse that demonstrates real-world ingestion, streaming/ba
 
 This project is a full Azure Data Engineering build that ingests from a cloud-hosted Azure SQL Database into ADLS Gen2 using Azure Data Factory (ADF) with incremental loading and backfilling (not a full refresh). Data is refined in Azure Databricks with Spark Structured Streaming + Autoloader, governed by Unity Catalog, and modeled into a star schema with Slowly Changing Dimensions (SCD Type 2). The Gold layer is curated via Delta Live Tables (DLT), and deployments follow CI/CD best practices using Databricks Asset Bundles and GitHub. Logic Apps provide email alerts on ADF failures. The repo also covers the full resource setup (RG, Storage with bronze/silver/gold, ADF, SQL DB, Databricks workspace).
 
-<img src=["screenshots/azure-resource-group.png" alt="Azure Resource Group with Storage, ADF, Databricks, SQL, Access Connector](https://github.com/pninad9/End-to-End-Azure-Databricks-Data-Engineering-Project/blob/master/Screenshot/Reasource%20Group.png?raw=true)" />
+<img src= "https://github.com/pninad9/End-to-End-Azure-Databricks-Data-Engineering-Project/blob/688a8efc866dfe404f162dec98120d12489551f8/Screenshot/Reasource%20Group.png" />
 
 ## Azure Data Factory And SQL
 
