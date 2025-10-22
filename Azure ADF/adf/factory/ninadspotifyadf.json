@@ -1,0 +1,9 @@
+{
+	"name": "ninadspotifyadf",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "",
+		"tenantId": ""
+	}
+}

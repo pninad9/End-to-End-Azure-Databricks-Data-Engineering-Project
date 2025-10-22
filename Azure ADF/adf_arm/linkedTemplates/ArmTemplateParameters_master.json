@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ninadspotifyadf"
+		},
+		"azure_sql_password": {
+			"value": ""
+		},
+		"datalake_accountKey": {
+			"value": ""
+		},
+		"azure_sql_properties_typeProperties_server": {
+			"value": "ninadspotifysqlserver.database.windows.net"
+		},
+		"azure_sql_properties_typeProperties_database": {
+			"value": "spotify"
+		},
+		"azure_sql_properties_typeProperties_userName": {
+			"value": "adminadmin"
+		},
+		"datalake_properties_typeProperties_url": {
+			"value": "https://ninadspotifyproject.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}

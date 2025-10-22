@@ -1,0 +1,35 @@
+# This is a Databricks asset bundle definition for spotify_dab.
+# See https://docs.databricks.com/dev-tools/bundles/index.html for documentation.
+bundle:
+  name: spotify_dab
+  uuid: 4226743f-bd17-45c8-96d0-6f3d75e85d47
+
+artifacts:
+  python_artifact:
+    type: whl
+    build: uv build --wheel
+
+include:
+  - resources/*.yml
+  - resources/*/*.yml
+
+targets:
+  dev:
+    # The default target uses 'mode: development' to create a development copy.
+    # - Deployed resources get prefixed with '[dev my_user_name]'
+    # - Any job schedules and triggers are paused by default.
+    # See also https://docs.databricks.com/dev-tools/bundles/deployment-modes.html.
+    mode: development
+    default: true
+    workspace:
+      host: http://127.0.0.1:7073
+
+  prod:
+    mode: production
+    workspace:
+      host: http://127.0.0.1:7073
+      # We explicitly deploy to /Workspace/Users/pninad009_gmail.com#ext#@pninad009gmail.onmicrosoft.com to make sure we only have a single copy.
+      root_path: 
+    permissions:
+      - user_name: 
+        level: 

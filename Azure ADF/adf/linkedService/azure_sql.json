@@ -1,0 +1,17 @@
+{
+	"name": "azure_sql",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "ninadspotifysqlserver.database.windows.net",
+			"database": "spotify",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "",
+			"encryptedCredential": ""
+		}
+	}
+}
