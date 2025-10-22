@@ -125,4 +125,4 @@ clean = (raw
 
 ### Final Words
 
-This project isn’t a toy pipeline—it’s a realistic Azure lakehouse that showcases the exact patterns teams ship in production: incremental ingestion, streaming transforms with Autoloader, SCD2 dimensions via DLT, and governed Unity Catalog with CI/CD. Clone it, run it, and adapt it to your next dataset; the structure, utilities, and metadata-driven approach are built to be reused and extended as your data platform grows.
+This project isn’t a toy pipeline it’s a realistic Azure lakehouse that showcases the exact patterns teams ship in production: incremental ingestion, streaming transforms with Autoloader, SCD2 dimensions via DLT, and governed Unity Catalog with CI/CD. Clone it, run it, and adapt it to your next dataset; the structure, utilities, and metadata-driven approach are built to be reused and extended as your data platform grows.
